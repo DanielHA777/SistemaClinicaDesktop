@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="228004e2-ab50-4553-b609-fee381279a18">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[c2lzdHZpbGEuZmlzaW8gQVMgLDQ4LDk1LGQ2NjlhYTliLTU3OTMtNGFlNy05Y2ZjLTJlNDYwZmI2
+Nzg1OTs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT sistvila.fisio.id,
+	sistvila.fisio.residente_id,
+	sistvila.fisio.colaborador_id,
+	sistvila.fisio.`nomeCola`,
+	sistvila.fisio.`nomeResi`,
+	sistvila.fisio.sessao,
+	sistvila.fisio.data
+FROM sistvila.fisio]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fisio"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomeCola" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeCola"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeCola"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fisio"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomeResi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeResi"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeResi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fisio"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sessao" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="sessao"/>
+		<property name="com.jaspersoft.studio.field.label" value="sessao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fisio"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="data"/>
+		<property name="com.jaspersoft.studio.field.label" value="data"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fisio"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="nomeCola">
+		<groupExpression><![CDATA[$F{nomeCola}]]></groupExpression>
+	</group>
+	<group name="nomeResi">
+		<groupExpression><![CDATA[$F{nomeResi}]]></groupExpression>
+	</group>
+	<group name="sessao">
+		<groupExpression><![CDATA[$F{sessao}]]></groupExpression>
+	</group>
+	<group name="data">
+		<groupExpression><![CDATA[$F{data}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="30" width="414" height="49" forecolor="#803441" uuid="544e6a59-9a5c-400a-aaac-bb5660304ec2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bauhaus 93" size="26"/>
+				</textElement>
+				<text><![CDATA[Relatório Fisioterapia]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="19" width="280" height="50" uuid="20691034-a270-47f0-b524-ef713690e60c"/>
+				<imageExpression><![CDATA["/src/imagens/logoo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="11" width="46" height="30" uuid="5b0c4802-55d7-4433-afed-738cc226ed78">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1540ae3e-d047-499b-8f16-94c62dd3fbf8"/>
+				</reportElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="50" y="16" width="78" height="30" uuid="15705b25-997b-453c-90b7-3baba319c286">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc89ca45-5005-4b82-bfa3-c6f6349343e7"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Black" size="11"/>
+				</textElement>
+				<text><![CDATA[Colaborador]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="15" width="100" height="30" uuid="544a5372-dc9b-463b-8248-c0608b607420">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca399e44-5964-4daf-8a74-c1540b6a54eb"/>
+				</reportElement>
+				<text><![CDATA[Residente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="15" width="100" height="30" uuid="bc6a336c-8cb0-47d5-a302-ea68d6cbecd3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31bd3ac5-1496-426f-a42c-277ed91184c2"/>
+				</reportElement>
+				<text><![CDATA[data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="15" width="70" height="30" uuid="a774993e-376a-478f-bb65-4609321d21a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7bb317c7-11d5-4494-8514-e60cf4223a57"/>
+				</reportElement>
+				<text><![CDATA[sessao]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="0" width="50" height="30" uuid="755a648e-a091-41c3-89a6-ffe3aacb340f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1540ae3e-d047-499b-8f16-94c62dd3fbf8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="0" width="78" height="30" uuid="fdd041f4-57d2-4fe5-b068-21b4b8d4c6f1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc89ca45-5005-4b82-bfa3-c6f6349343e7"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nomeCola}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="30" uuid="f35ebb73-a93d-4719-a484-d12f55a0d649">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca399e44-5964-4daf-8a74-c1540b6a54eb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nomeResi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="70" height="30" uuid="4a623290-fd7b-4f43-ad32-83ee748013e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7bb317c7-11d5-4494-8514-e60cf4223a57"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{sessao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="100" height="30" uuid="d3bdba60-ae2b-4bb4-ba9d-7d29e0f0bce8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31bd3ac5-1496-426f-a42c-277ed91184c2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-30" y="29" width="620" height="1" uuid="3cc44fc1-4b3d-470d-ad43-7e7f952a764b"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement x="500" y="32" width="100" height="30" uuid="9e5cb119-e9a4-425d-b95a-25543c7c76df"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

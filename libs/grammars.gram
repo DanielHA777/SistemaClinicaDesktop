@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar grammar;
+
+public <commands> = ( doClick |  close );  
